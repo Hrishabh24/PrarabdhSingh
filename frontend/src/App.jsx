@@ -4,7 +4,7 @@ import { motion, AnimatePresence, useScroll, useTransform, useMotionValue, useSp
 import { FaGithub, FaLinkedin, FaEnvelope, FaMoon, FaSun, FaComment, FaBriefcase, FaUser, FaExternalLinkAlt, FaTerminal, FaBars, FaTimes, FaCode, FaReact } from 'react-icons/fa';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://prarabdhsingh.onrender.com/api';
 
 const Project3DCard = ({ project }) => {
   const x = useMotionValue(0);

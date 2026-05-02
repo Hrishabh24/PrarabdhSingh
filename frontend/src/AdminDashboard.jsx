@@ -3,7 +3,7 @@ import axios from 'axios';
 import { motion } from 'framer-motion';
 import { FaLock, FaEnvelope, FaExclamationTriangle, FaSignOutAlt, FaCalendar, FaEye, FaEyeSlash, FaKey, FaCheckCircle } from 'react-icons/fa';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://prarabdhsingh.onrender.com/api';
 
 const AdminDashboard = () => {
   const [isAuth, setIsAuth] = useState(false);

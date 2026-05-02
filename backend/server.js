@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/portfolio')
+mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://Prarabdh:Hrish6702@prarabdh.7oeroj3.mongodb.net/portfolio?appName=Prarabdh')
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log('MongoDB connection error:', err));
 
